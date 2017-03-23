@@ -1,0 +1,1 @@
+# serverless-plugin-existing-cloudwatch-rule
