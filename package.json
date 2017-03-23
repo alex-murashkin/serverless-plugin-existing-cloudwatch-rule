@@ -1,0 +1,40 @@
+{
+  "name": "serverless-plugin-existing-cloudwatch-rule",
+  "version": "0.9.0",
+  "description": "Allows functions to be triggered by pre-defined CloudWatch rules",
+  "main": "index.js",
+  "engines": {
+    "node": ">=4.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "istanbul cover node_modules/mocha/bin/_mocha --",
+    "posttest": "eslint .",
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "serverless",
+    "aws",
+    "cloudwatch",
+    "rule",
+    "existing"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexanderMS/serverless-plugin-existing-cloudwatch-rule.git"
+  },
+  "author": "Alexandr Murashkin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlexanderMS/serverless-plugin-existing-cloudwatch-rule/issues"
+  },
+  "homepage": "https://github.com/AlexanderMS/serverless-plugin-existing-cloudwatch-rule#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "eslint": "3.18.0",
+    "istanbul": "0.4.5",
+    "mocha": "3.2.0"
+  }
+}
