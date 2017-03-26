@@ -8,7 +8,7 @@ Useful for projects that setup and scale infrastructure separately from code, e.
 
 Example `serverless.yml`:
 
-```
+```yml
 plugins:
   - serverless-plugin-existing-cloudwatch-rule
 
