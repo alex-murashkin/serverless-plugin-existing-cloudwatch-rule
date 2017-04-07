@@ -19,7 +19,7 @@ module.exports = class ExistingEventRulePlugin {
    }
 
    _normalizeName(s) {
-     return (s[0].toUpperCase() + s.substr(1)).replace(/[-]/g, 'Dash').replace(/[_]/g, 'Underscore');
+     return (s[0].toUpperCase() + s.substr(1)).replace(/[-]/g, 'Dash').replace(/[_]/g, 'Underscore').replace(/[\/]/g, '');
      // as per https://serverless.com/framework/docs/providers/aws/guide/resources/
    }
 
