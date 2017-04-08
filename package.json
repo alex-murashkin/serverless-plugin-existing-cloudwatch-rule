@@ -1,6 +1,6 @@
 {
   "name": "serverless-plugin-existing-cloudwatch-rule",
-  "version": "0.9.1",
+  "version": "1.0.0",
   "description": "Allows functions to be triggered by pre-defined CloudWatch rules",
   "main": "index.js",
   "engines": {
