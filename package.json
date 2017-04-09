@@ -21,6 +21,7 @@
     "aws",
     "cloudwatch",
     "rule",
+    "external",
     "existing"
   ],
   "repository": {
