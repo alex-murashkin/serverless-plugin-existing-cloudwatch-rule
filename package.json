@@ -10,9 +10,11 @@
     "test": "test"
   },
   "scripts": {
-    "test": "istanbul cover node_modules/mocha/bin/_mocha --",
-    "posttest": "eslint .",
-    "lint": "eslint ."
+    "coverage": "nyc report --reporter=lcov",
+    "coveralls-coverage": "nyc report --reporter=text-lcov | coveralls",
+    "lint": "eslint .",
+    "test": "nyc --all mocha --recursive ./test",
+    "posttest": "eslint ."
   },
   "keywords": [
     "serverless",
@@ -34,7 +36,7 @@
   "devDependencies": {},
   "dependencies": {
     "eslint": "3.18.0",
-    "istanbul": "0.4.5",
-    "mocha": "3.2.0"
+    "mocha": "3.2.0",
+    "nyc": "10.2.0"
   }
 }
