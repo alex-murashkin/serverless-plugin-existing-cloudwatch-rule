@@ -27,16 +27,18 @@
     "type": "git",
     "url": "git+https://github.com/AlexanderMS/serverless-plugin-existing-cloudwatch-rule.git"
   },
-  "author": "Alexandr Murashkin",
+  "author": "Alex Murashkin",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/AlexanderMS/serverless-plugin-existing-cloudwatch-rule/issues"
   },
   "homepage": "https://github.com/AlexanderMS/serverless-plugin-existing-cloudwatch-rule#readme",
-  "devDependencies": {},
-  "dependencies": {
-    "eslint": "3.18.0",
-    "mocha": "3.2.0",
-    "nyc": "10.2.0"
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.18.0",
+    "mocha": "^3.2.0",
+    "nyc": "^10.2.0",
+    "sinon": "^2.1.0"
   }
 }

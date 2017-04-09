@@ -1,0 +1,29 @@
+{
+  "NamedFunctionLambdaPermissionExternalTimer": {
+    "Properties": {
+      "Action": "lambda:InvokeFunction",
+      "FunctionName": {
+        "Fn::GetAtt": [
+          "NamedFunctionLambdaFunction",
+          "Arn"
+        ]
+      },
+      "Principal": "events.amazonaws.com",
+      "SourceArn": {
+        "Fn::Join": [
+          ":", [
+            "arn:aws:events",
+            {
+              "Ref": "AWS::Region"
+            },
+            {
+              "Ref": "AWS::AccountId"
+            },
+            "externalTimer"
+          ]
+        ]
+      }
+    },
+    "Type": "AWS::Lambda::Permission"
+  }
+}

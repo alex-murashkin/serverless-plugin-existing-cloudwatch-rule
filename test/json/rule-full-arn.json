@@ -1,0 +1,16 @@
+{
+  "NamedFunctionLambdaPermissionRulemyUnderscoreprojectDashPDTMidnightScheduleDash42UGHOTBBVIET": {
+    "Properties": {
+      "Action": "lambda:InvokeFunction",
+      "FunctionName": {
+        "Fn::GetAtt": [
+          "NamedFunctionLambdaFunction",
+          "Arn"
+        ]
+      },
+      "Principal": "events.amazonaws.com",
+      "SourceArn": "arn:aws:events:us-east-1:160879880353:rule/my_project-PDTMidnightSchedule-42UGHOTBBVIET"
+    },
+    "Type": "AWS::Lambda::Permission"
+  }
+}
