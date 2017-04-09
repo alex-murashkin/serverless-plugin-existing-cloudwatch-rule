@@ -1,5 +1,9 @@
 # serverless-plugin-existing-cloudwatch-rule
 
+[![npm version](https://badge.fury.io/js/serverless-plugin-existing-cloudwatch-rule.svg)](https://badge.fury.io/js/serverless-plugin-existing-cloudwatch-rule)
+[![CircleCI](https://circleci.com/gh/AlexanderMS/serverless-plugin-existing-cloudwatch-rule.svg?style=shield)](https://circleci.com/gh/AlexanderMS/serverless-plugin-existing-cloudwatch-rule)
+[![Coverage Status](https://coveralls.io/repos/github/AlexanderMS/serverless-plugin-existing-cloudwatch-rule/badge.svg?branch=master)](https://coveralls.io/github/AlexanderMS/serverless-plugin-existing-cloudwatch-rule?branch=master)
+
 Allows an [AWS Lambda](https://aws.amazon.com/lambda/) function to be triggered
 by pre-configured CloudWatch event rules.
 
