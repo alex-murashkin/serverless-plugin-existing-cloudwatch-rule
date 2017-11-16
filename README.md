@@ -32,7 +32,7 @@ functions:
   key-rotation-lambda: #1
     handler: src/key-rotation-lambda.handler
     events:
-      - cloudWatchRule: key-rotation-timer
+      - cloudWatchRule: 'rule/key-rotation-timer'
   counter-lambda: #2
     handler: src/counter-lambda.handler
     events:
@@ -49,8 +49,7 @@ The function `key-rotation-lambda` will be deployed on `serverless deploy`
 and, due to the plugin, with the necessary permissions to be invoked by
 `key-rotation-timer`.
 The timer will be shown on the AWS Lambda -> Triggers page as if it was setup
-manually or using the traditional `schedule` event. The prefix `rule/` for the
-name is supported but optional for the plugin.
+manually or using the traditional `schedule` event.
 
 2. To attach a rule defined by its full ARN, use the `cloudWatchRuleArn`
 property, such as in the `counter-lambda` example.
