@@ -26,7 +26,7 @@ module.exports = class ExistingEventRulePlugin {
 
    _buildPermissionSourceArn(rule) {
      if (rule.startsWith('arn')) { return rule; }
-     const source = rule === 'ANY' ? '*' : rule;
+     const source = rule === 'ANY' ? 'rule/*' : rule;
      return { 'Fn::Join': [ ':', [ 'arn:aws:events', { 'Ref': 'AWS::Region' }, { 'Ref': 'AWS::AccountId' }, source ] ] };
    }
 
